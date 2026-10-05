@@ -1,0 +1,19 @@
+:root{--ink:#14202b;--mute:#5d6b78;--bg:#f4f7f9;--card:#fff;--line:#dbe3ea;--teal:#0f766e;--amber:#c27803;--red:#be3a1d;--green:#2f855a}
+@media(prefers-color-scheme:dark){:root{--ink:#e8eef3;--mute:#94a3b0;--bg:#0e161d;--card:#16212a;--line:#263543;--teal:#2dd4bf}}
+*{box-sizing:border-box}body{margin:0;font:16px/1.55 "Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+a{color:var(--teal)}nav{display:flex;gap:18px;align-items:center;padding:14px 5vw;border-bottom:1px solid var(--line);background:var(--card)}
+nav b{font-size:1.2rem;margin-right:auto;letter-spacing:.5px}nav a{text-decoration:none;color:var(--ink)}
+main{max-width:1100px;margin:0 auto;padding:28px 5vw}.hero{padding:9vh 0 6vh;max-width:760px}
+.hero h1{font-size:clamp(2.6rem,7vw,4.6rem);margin:0;line-height:1}.hero h2{font-size:1.6rem;color:var(--teal);margin:.3em 0}
+.btn{display:inline-block;padding:10px 20px;border-radius:6px;background:var(--teal);color:#fff;border:0;text-decoration:none;font-size:1rem;cursor:pointer}
+.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}.btn:focus-visible,input:focus-visible{outline:3px solid var(--amber)}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:18px}
+.stat b{font-size:2rem;display:block}.tag{padding:2px 9px;border-radius:99px;font-size:.8rem;color:#fff}
+.high{background:var(--red)}.medium{background:var(--amber)}.low{background:var(--green)}
+.row{display:flex;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);flex-wrap:wrap}.row:last-child{border:0}.row .grow{flex:1}
+.mute{color:var(--mute);font-size:.9rem}.done{text-decoration:line-through;opacity:.55}
+input,select,textarea{width:100%;padding:10px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--ink);font:inherit}
+form.stack{max-width:400px;display:grid;gap:12px}.flash{padding:10px 14px;border-left:4px solid var(--amber);background:var(--card);margin-bottom:14px}
+.banner{background:var(--red);color:#fff;padding:10px 14px;border-radius:6px;margin-bottom:16px}
+.drop{border:2px dashed var(--teal);border-radius:10px;padding:48px;text-align:center}.drop.over{background:var(--card)}
+#steps li{color:var(--mute)}#steps li.on{color:var(--teal);font-weight:600}h3{margin-top:0}pre{white-space:pre-wrap}
