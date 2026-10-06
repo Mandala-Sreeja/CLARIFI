@@ -355,5 +355,5 @@ const j=await r.json();o.textContent=j.answer||j.error}</script>"""),
 app.jinja_loader = DictLoader(T)
 
 if __name__ == "__main__":
-    init_db()
-    app.run(debug=True)
+    
+    app.run(debug=False,use_reloader=False)
